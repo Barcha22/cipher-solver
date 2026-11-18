@@ -41,15 +41,15 @@ cipher-solver/
 │   └── test/      # 2 cleaned TEST books + passages/ (10 files, 40 pieces each)
 ├── src/
 │   ├── data.py    # cleaning, split routing, alphabet verification, passages
-│   ├── lm.py      # CharNGram: train / logprob / perplexity   (in progress)
-│   ├── cipher.py  # (Task 6) generate_key, encrypt, decrypt
-│   ├── solvers.py # (Tasks 7-9) frequency baseline, hill climbing, SA
-│   ├── postprocess.py  # (Task 10) dictionary + edit distance fixer
-│   ├── evaluate.py     # (Task 11) key/char/word accuracy metrics
-│   └── experiments.py  # (Task 11) run the grid, save CSVs
+│   ├── lm.py      # CharNGram: train / logprob / perplexity   
+│   ├── cipher.py  # generate_key, encrypt, decrypt
+│   ├── solvers.py # frequency baseline, hill climbing, SA
+│   ├── postprocess.py  # dictionary + edit distance fixer
+│   ├── evaluate.py     # key/char/word accuracy metrics
+│   └── experiments.py  # run the grid, save CSVs
 ├── models/        # saved LM counts
 ├── results/       # CSVs + graphs
-├── app/           # (Task 12) Streamlit demo
+├── app/           # Streamlit demo
 ├── tests/         # checkpoint scripts
 └── requirements.txt
 ```
@@ -95,8 +95,8 @@ python src/lm.py      # train unigram + bigram char models, print sanity checks 
 |---|---|---|
 | 0 | Environment + skeleton | ✅ |
 | 1 | Books downloaded | ✅ |
-| 2 | Cleaning pipeline | ✅ verified: 7/7 books OK, 93.3–96.2% chars kept |
-| 3 | Test passages | ✅ verified: 10 files × 40 pieces, lengths exact |
+| 2 | Cleaning pipeline | ✅ |
+| 3 | Test passages | ✅ |
 | 4 | Unigram + bigram LM | ✅ |
 | 5 | Trigram + 4-gram + interpolation; perplexity table | ✅ |
 | 6 | Cipher module | in progress... |
