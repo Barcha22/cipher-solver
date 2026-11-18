@@ -26,7 +26,13 @@ class Data:
         clean_data_path = root_dir/"data/clean"
         test_data_path = root_dir/"data/test"
 
-        if not any(clean_data_path.iterdir()) or not any(test_data_path.iterdir()):
+        clean_data_path.mkdir(parents=True, exist_ok=True)
+        test_data_path.mkdir(parents=True, exist_ok=True)
+
+        clean_files = {p.name for p in clean_data_path.iterdir() if p.is_file()}
+        test_files = {p.name for p in test_data_path.iterdir() if p.is_file()}
+
+        if clean_files != self.TRAIN_BOOKS or test_files != self.TEST_BOOKS:
             for item in raw_data_path.iterdir():
                 if not item.is_file():
                     continue
@@ -116,4 +122,3 @@ if __name__ == "__main__":
 
              
         
-
