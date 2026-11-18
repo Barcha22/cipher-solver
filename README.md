@@ -99,8 +99,8 @@ python src/lm.py      # train unigram + bigram char models, print sanity checks 
 | 3 | Test passages | ✅ |
 | 4 | Unigram + bigram LM | ✅ |
 | 5 | Trigram + 4-gram + interpolation; perplexity table | ✅ |
-| 6 | Cipher module | in progress... |
-| 7 | Frequency baseline solver | ⬜ |
+| 6 | Cipher module | ✅ |
+| 7 | Frequency baseline solver | in-progress |
 | 8 | Hill climbing + restarts | ⬜ |
 | 9 | Simulated annealing + tuning | ⬜ |
 | 10 | Post-processing (dictionary + edit distance) | ⬜ |
