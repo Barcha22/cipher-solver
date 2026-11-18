@@ -103,9 +103,8 @@ python src/lm.py      # train unigram + bigram char models, print sanity checks 
 | 7 | Frequency baseline solver | ✅ |
 | 8 | Hill climbing + restarts | ✅ |
 | 9 | Simulated annealing + tuning | ✅ |
-| 10 | Post-processing (dictionary + edit distance) | in-progress |
-| 11 | Experiments + graphs | ⬜ |
-| 12 | Streamlit demo | ⬜ |
-| 13 | Report + slides + rehearsal | ⬜ |
+| 10 | Post-processing (dictionary + edit distance) | ✅ |
+| 11 | Experiments + graphs | ✅ |
+| 12 | Streamlit demo | in-progress |
 
 
