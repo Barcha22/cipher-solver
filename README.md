@@ -105,6 +105,6 @@ python src/lm.py      # train unigram + bigram char models, print sanity checks 
 | 9 | Simulated annealing + tuning | ✅ |
 | 10 | Post-processing (dictionary + edit distance) | ✅ |
 | 11 | Experiments + graphs | ✅ |
-| 12 | Streamlit demo | in-progress |
+| 12 | Streamlit demo | ✅ |
 
 
