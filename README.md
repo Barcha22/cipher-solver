@@ -93,6 +93,7 @@ python src/lm.py      # train unigram + bigram char models, print sanity checks 
 
 | # | Task |
 |---|---|---|
+
 | 0 | Environment + skeleton  
 | 1 | Books downloaded  
 | 2 | Cleaning pipeline  
