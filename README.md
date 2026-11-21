@@ -89,22 +89,22 @@ python src/data.py    # clean books → data/clean (5) + data/test (2), verify a
 python src/lm.py      # train unigram + bigram char models, print sanity checks   (in progress)
 ```
 
-## Status
+## TASKS
 
-| # | Task | Status |
+| # | Task |
 |---|---|---|
-| 0 | Environment + skeleton | ✅ |
-| 1 | Books downloaded | ✅ |
-| 2 | Cleaning pipeline | ✅ |
-| 3 | Test passages | ✅ |
-| 4 | Unigram + bigram LM | ✅ |
-| 5 | Trigram + 4-gram + interpolation; perplexity table | ✅ |
-| 6 | Cipher module | ✅ |
-| 7 | Frequency baseline solver | ✅ |
-| 8 | Hill climbing + restarts | ✅ |
-| 9 | Simulated annealing + tuning | ✅ |
-| 10 | Post-processing (dictionary + edit distance) | ✅ |
-| 11 | Experiments + graphs | ✅ |
-| 12 | Streamlit demo | ✅ |
+| 0 | Environment + skeleton  |
+| 1 | Books downloaded  |
+| 2 | Cleaning pipeline  |
+| 3 | Test passages  |
+| 4 | Unigram + bigram LM  |
+| 5 | Trigram + 4-gram + interpolation; perplexity table  |
+| 6 | Cipher module  |
+| 7 | Frequency baseline solver |
+| 8 | Hill climbing + restarts  |
+| 9 | Simulated annealing + tuning  |
+| 10 | Post-processing (dictionary + edit distance)  |
+| 11 | Experiments + graphs  |
+| 12 | Streamlit integration  |
 
 
