@@ -91,8 +91,8 @@ python src/lm.py      # train unigram + bigram char models, print sanity checks 
 
 ## TASKS
 
-| # | Task |
-|---|---|---|
+| # | Tasks 
+
 
 | 0 | Environment + skeleton  
 | 1 | Books downloaded  
