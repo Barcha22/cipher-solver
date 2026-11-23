@@ -78,34 +78,47 @@ cipher-solver/
 
 ```bash
 python -m venv .venv
-.venv\Scripts\activate        # Windows (Cmder/PowerShell)
-pip install -r requirements.txt   # nltk, numpy, pandas, matplotlib (streamlit comes later)
+
+# Linux/macOS
+source .venv/bin/activate
+
+# Windows
+.venv\Scripts\activate
+
+pip install -r requirements.txt
 ```
 
 ## Usage
 
+Prepare the raw Project Gutenberg texts and build the cleaned training/test
+datasets and test passages:
+
 ```bash
-python src/data.py    # clean books → data/clean (5) + data/test (2), verify alphabet, build passages
-python src/lm.py      # train unigram + bigram char models, print sanity checks   (in progress)
+python src/data.py
 ```
 
-## TASKS
+Train and inspect the character n-gram language model:
 
-| # | Tasks 
+```bash
+python src/lm.py
+```
 
+Run the demo:
 
-| 0 | Environment + skeleton  
-| 1 | Books downloaded  
-| 2 | Cleaning pipeline  
-| 3 | Test passages  
-| 4 | Unigram + bigram LM  
-| 5 | Trigram + 4-gram + interpolation; perplexity table  
-| 6 | Cipher module  
-| 7 | Frequency baseline solver 
-| 8 | Hill climbing + restarts  
-| 9 | Simulated annealing + tuning  
-| 10 | Post-processing (dictionary + edit distance)  
-| 11 | Experiments + graphs 
-| 12 | Streamlit demo 
+```bash
+streamlit run app/app.py
+```
+
+The demo opens with editable plaintext and a randomly generated substitution
+key, encrypts the text, and lets you choose the frequency baseline, hill
+climbing, or simulated annealing to recover it. It trains the selected 1- to
+4-gram model in memory from `data/clean/`; it does not download or clean data
+and it does not require a separately saved model.
+
+Run the evaluation grid and save the CSV and graph outputs:
+
+```bash
+python src/experiments.py
+```
 
 
