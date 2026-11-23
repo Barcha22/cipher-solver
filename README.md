@@ -111,7 +111,7 @@ streamlit run app/app.py
 
 The demo opens with editable plaintext and a randomly generated substitution
 key, encrypts the text, and lets you choose the frequency baseline, hill
-climbing, or simulated annealing to recover it. It trains the selected 1- to
+climbing, or simulated annealing to recover it. It trains the selected 1 to
 4-gram model in memory from `data/clean/`; it does not download or clean data
 and it does not require a separately saved model.
 

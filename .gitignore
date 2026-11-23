@@ -4,6 +4,4 @@ __pycache__/
 *.py[codz]
 *$py.class
 
-results/
-PRESENTATION_PROMPT.md
 # PROJECT_OVERVIEW.md
